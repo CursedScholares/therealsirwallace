@@ -12,7 +12,6 @@ LANGUAGE
 //////////////////////////////////////////////////////////////
 BEGIN "Install Wallace NPC" DESIGNATED 1 // Main Component
 //////////////////////////////////////////////////////////////
-ADD_JOURNAL @41 @42 USING ~wallace/tra/english/setup.tra~ // change it later to whatever .tra file you need, I quickly added a tra file for testing purposes
 
 
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
@@ -213,7 +212,7 @@ WRITE_ASCII 0x280 ~CFKYLE~   #32
 
 COMPILE EVALUATE_BUFFER ~wallace/Dialogue/CFKYL25.d~  // All Wallaces's ToB banters with other party members will go here.
 	~wallace/Dialogue/KYLEFTS.d~  // Wallace's ToB greeting dialogue will go here.
-	~wallace/Dialogue/CFKYL25.d~  // Wallace's ToB leaving party dialogue will go here.
+	~wallace/Dialogue/CFKYL25P.d~  // Wallace's ToB leaving party dialogue will go here.
 
 
 
@@ -261,7 +260,7 @@ IF ~25FILE~
     STR_VAR
       dv = "?"
       override_ToB = "CFKYL25S"
-      dialog_ToB = "CFKYLE25"
+      dialog_ToB = "CFKYL25"
       cre_ToB = "CFKYLE25"
       string = "@0"
       stringPosDV = "Yoshimo"

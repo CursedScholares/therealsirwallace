@@ -1,4 +1,3 @@
-BEGIN BCFKYL25
 
 CHAIN 
 IF ~InParty("CFKYLE")
@@ -16,7 +15,7 @@ DO ~SetGlobal("CFKYLEAerieToB1","GLOBAL",1)~
 ~And you're one of the best...pumpkins I've ever befriended.~
 == CFKYLE25 
 ~To family!~
-== BAERIE25 
+== BAERIE25
 ~Here here!~
 EXIT
 
