@@ -1,5 +1,3 @@
-BEGIN BCFKYL25
-
 CHAIN 
 IF ~InParty("CFKYLE")
 See("CFKYLE")
