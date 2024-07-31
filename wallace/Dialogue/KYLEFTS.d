@@ -26,5 +26,5 @@ END
 IF ~~ b1.3
 SAY ~Sure but don't be surprised if you find me in a smog.~
 = ~Feel free to join in if you do.~
-IF ~~ DO ~MoveToPointNoInterrupt([2653.1436) Face(2)~ EXIT 
+IF ~~ DO ~MoveToPointNoInterrupt([2653.1436]) Face(2)~ EXIT
 END

@@ -1,0 +1,4 @@
+@41 = ~Whatever~
+@42 = ~Whatever again~
+
+// added this back because it seems that ADD_JOURNAL requires this for journal entries?

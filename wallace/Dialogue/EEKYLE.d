@@ -32,15 +32,15 @@ See("Dorn")
 Global("CFKYLEDorn2","GLOBAL",0)~ THEN CFKYLE CFKYLEDorn2
 ~So, Dorn, how much can you lift? 200, 300lbs?~
 DO ~SetGlobal("CFKYLEDorn2","GLOBAL",1)~
-== BDORN 
+== BDORN
 ~Enough to toss corpses into the river.~
 == CFKYLE
 ~I can lift like, maybe a head, maybe two.~
-== BDORN 
+== BDORN
 ~You can be my servant then, and clean the trash beneath me and <CHARNAME>'s feet.~
 == CFKYLE
 ~Is it because I'm a pumpkin and that I'm used to the dirt?~
-== BDORN 
+== BDORN
 ~You catch on quickly.~
 == CFKYLE
 ~One of these tenday's you are going to get smeared in the dirt.~
@@ -55,18 +55,18 @@ IF ~InParty("CFKYLE")
 See("CFKYLE")
 !StateCheck("Dorn",CD_STATE_NOTVALID)
 !StateCheck("CFKYLE",CD_STATE_NOTVALID)
-Global("CFKYLEToBDorn1","GLOBAL",0)~ THEN BDORN25 CFKYLE25ToBDorn1
+Global("CFKYLEToBDorn1","GLOBAL",0)~ THEN BDORN25 CFKYL25ToBDorn1
 ~I've seen the power you cast. The fiery hatred for us mortals in the midst of battle.~
 DO ~SetGlobal("CFKYLEToBDorn1","GLOBAL",1)~
-== CFKYLE25
+== CFKYL25
 ~I don't deal with demons or blackguards Dorn.~
 == BDORN25
 ~Why do you deny the power you so rightfully deserve? After seeing all the carnage done to your kind?~
-== CFKYLE25
+== CFKYL25
 ~I've done a lot of stupid stuff in my life but I'm not stupid enough to deal with things worse than what <CHARNAME> can turn into.~
-== BDORN25 
+== BDORN25
 ~To think such a fragile thing would deny unyielding power? Pathetic.~
-== CFKYLE25
+== CFKYL25
 ~Keep talking. I'm sure you'll keep saying that when you're burning in the Abyss while I rest within Chauntea's bosom.~
 EXIT
 
@@ -190,7 +190,7 @@ See("CFKYLE")
 !StateCheck("Hexxat",CD_STATE_NOTVALID)
 !StateCheck("CFKYLE",CD_STATE_NOTVALID)
 Global("OHH_cabrina","GLOBAL",6)
-Global("CFKYLEToBHexxat1","GLOBAL",0)~ THEN CFKYLE25 CFKYLEToBHexxat1
+Global("CFKYLEToBHexxat1","GLOBAL",0)~ THEN CFKYL25 CFKYLEToBHexxat1
 ~Sister, this shouldn't happen.~
 DO ~SetGlobal("CFKYLEToBHexxat1","GLOBAL",1)~
 == BHEXXAT
@@ -223,8 +223,6 @@ DO ~SetGlobal("CFKYLEToBHexxat1","GLOBAL",1)~
 ~To me, you will never be a vampire. You're my sister Hexxat. Rest in peace.~
 EXIT
 
-EXIT
-
 // Neera
 
 CHAIN
@@ -235,13 +233,13 @@ See("Neera")
 Global("CFKYLENeera1","GLOBAL",0)~ THEN BNEERA CFKYLENeera1
 ~Wallace. Wally. Wall.~
 DO ~SetGlobal("CFKYLENeera1","GLOBAL",1)~
-== CFKYLE 
+== CFKYLE
 ~It's Sir Wallace, ok. Don't act is if we can be friends so long as your magic can set an entire plantation on fire.~
-== BNEERA 
+== BNEERA
 ~It's not on purpose, I swear! It's just accidental. Unless something evil gets in.~
 == CFKYLE
 ~Sister, I've seen too many mages use pumpkins for target practice. Man, seeing my brother burn alive is just too much.~
-== BNEERA 
+== BNEERA
 ~Were they the Red Wizards? I hear that the newer ones do that after they take one or two swigs from tankards they bought in a tavern.~
 == CFKYLE
 ~I don't trust you or your magic Neera. Everyone else I can. You are a special case.~
@@ -255,7 +253,7 @@ See("CFKYLE")
 Global("CFKYLENeera2","GLOBAL",0)~ THEN BNEERA CFKYLENeera2
 ~Wallace, I know that you...~
 DO ~SetGlobal("CFKYLENeera2","GLOBAL",1)~
-== CFKYLE 
+== CFKYLE
 ~Oh god, what is it?~
 == BNEERA
 ~Let me finish! Geez, you could at least hear me out before you send me away.~
@@ -308,14 +306,14 @@ IF ~InParty("Rasaad")
 See("Rasaad")
 !StateCheck("Rasaad",CD_STATE_NOTVALID)
 !StateCheck("CFKYLE",CD_STATE_NOTVALID)
-Global("CFKYLERasaad1","GLOBAL",0)~ THEN BRASSAD CFKYLERasaad1
+Global("CFKYLERasaad1","GLOBAL",0)~ THEN BRASAAD CFKYLERasaad1
 ~Sir Wallace, those markings on your body appears to be a optical illusion are they not?~
 DO ~SetGlobal("CFKYLERasaad1","GLOBAL",1)~
 == CFKYLE
 ~Yeah, I put them on so that people think I'm used when they visit the farm. Get's them everytime.~
-== BRASSAD
+== BRASAAD
 ~I know you work with tattoo's. You want to get a new one?~
-== BRASSAD
+== BRASAAD
 ~These artistic techniques are not known to me. Would it be alright if you could tell me?~
 == CFKYLE
 ~Come closer, there's a specific way Brother Rasaad to get it done. First, I'll need to borrow your shaving tools and ink.~
@@ -326,16 +324,16 @@ IF ~InParty("Rasaad")
 See("Rasaad")
 !StateCheck("Rasaad",CD_STATE_NOTVALID)
 !StateCheck("CFKYLE",CD_STATE_NOTVALID)
-Global("CFKYLERasaad2","GLOBAL",0)~ THEN BRASSAD CFKYLERasaad2
+Global("CFKYLERasaad2","GLOBAL",0)~ THEN BRASAAD CFKYLERasaad2
 ~Sir Wallace, in our last fight I've seen you use your fists in desperation.~
 DO ~SetGlobal("CFKYLERasaad2","GLOBAL",1)~
 == CFKYLE
 ~Brother, what else was I supposed to do? They were in my face trying to put me down.~
-== BRASSAD
+== BRASAAD
 ~Fighting like a wild animal is better than being idle and waiting for death to come. However, you need to know where to hit if it comes to desperation.~
 == CFKYLE
 ~You mean for the stem? I know that....but not from first hand experience. The lasses are the ones who do that to me.~
-== BRASSAD
+== BRASAAD
 ~Of that I have no doubt, but you're martial prowess needs work. Come brother, follow my movements. Strike as I do.~
 EXIT
 
@@ -347,13 +345,13 @@ See("CFKYLE")
 Global("CFKYLERasaad3","GLOBAL",0)~ THEN CFKYLE CFKYLERasaad3
 ~Brother Rasaad, when you see Alogoroth let me know. I wanna see where he lives.~
 DO ~SetGlobal("CFKYLERasaad3","GLOBAL",1)~
-== BRASSAD
+== BRASAAD
 ~And what will you do, once you possesses that knowledge?~
 == CFKYLE
 ~ Let's just say, he see's a pumpkin but I got a little something FOR him.~
-== BRASSAD
+== BRASAAD
 ~Were that it would be that easy to find him. But your sympathy eases the more heavier burdens on my mind. Come, let's us walk forward and help <CHARNAME> while we can.~
-== BRASSAD
+== BRASAAD
 ~My revenge will come at a later time.~
 EXIT
 
@@ -364,17 +362,19 @@ IF ~InParty("Rasaad")
 See("Rasaad")
 !StateCheck("Rasaad",CD_STATE_NOTVALID)
 !StateCheck("CFKYLE",CD_STATE_NOTVALID)
-Global("CFKYLEToBRasaad1","GLOBAL",0)~ THEN CFKYLE25 CFKYLEToBRasaad1
+Global("CFKYLEToBRasaad1","GLOBAL",0)~ THEN CFKYL25 CFKYLEToBRasaad1
 ~Brother Rasaad, once all this settles, why don't we celebrate back at the farm with some ale and pipeweed?~
 DO ~SetGlobal("CFKYLEToBRasaad1","GLOBAL",1)~
-== BRASSAD
+== BRASAAD
 ~Both the Sun Soul Order and Selune forbid us from partaking in such acts.~
 == CFKYLE
 ~ Come on now Brother. Just a little bit. Gotta enjoy the simple things in life. We can have <CHARNAME> join us and we'll drink til dawn!~
-== BRASSAD
+== BRASAAD
 ~In order for me to me be at my best, I cannot consume such things..~
-== BRASSAD
+== BRASAAD
 ~However, were the two of you planning on celebrating I shall join but only to ensure that things are not out of control.~
 == CFKYLE
 ~So long as you're there, that's all that matters.~
 EXIT
+
+// wrong Rasaad dlg file error fixed

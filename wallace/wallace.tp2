@@ -38,84 +38,86 @@ SAY MORALE
 ~I'm not getting cooked here!~
 SAY HAPPY
 ~Let's get smashed and find some wenches! We farruking earned it!~
-SAY UNHAPPY_ANNOYED 
+SAY UNHAPPY_ANNOYED
 ~Brother, what am I even doing here?~
-SAY UNHAPPY_SERIOUS 
+SAY UNHAPPY_SERIOUS
 ~You disappoint me and all pumpkins throughout the sword coast.~
-SAY UNHAPPY_BREAKING 
+SAY UNHAPPY_BREAKING
 ~I'm done. Next time I see you, I'll bury you in the earth.~
-SAY LEADER 
+SAY LEADER
 ~Me? Leading? Sure but let's find the nearest tavern first brother!~
 SAY TIRED
 ~I know I don't need to sleep but I can feel my pulp getting mushy. Can we rest?~
-SAY BORED 
+SAY BORED
 ~And I thought sitting in sunlight was boring...~
-SAY BATTLE_CRY1 
+SAY BATTLE_CRY1
 ~Don't mess with the stem!~
-SAY BATTLE_CRY2 
+SAY BATTLE_CRY2
 ~FOR THE BROTHER LENNY!~
-SAY BATTLE_CRY3 
+SAY BATTLE_CRY3
 ~Brother, are YOU good?~
-SAY DAMAGE 
+SAY DAMAGE
 ~Oof...~
-SAY HURT 
+SAY HURT
 ~Pumpkin pie? I don't wanna die.~
-SAY DYING 
+SAY DYING
 ~It was fun while it lasted brother...~
 SAY AREA_FOREST
 ~Being here reminds me of the farm back home. Once I get back, I plan on taking my fellow Brother-in-arms here.~
-SAY AREA_CITY 
+SAY AREA_CITY
 ~Alright, so...when are we courting the wenches around here?~
-SAY AREA_DUNGEON 
+SAY AREA_DUNGEON
 ~Not enough sunlight. And how do the mortals clean themselves here?~
-SAY AREA_DAY 
+SAY AREA_DAY
 ~Mind if we stay here for a while? My dew needs drying.~
-SAY AREA_NIGHT 
+SAY AREA_NIGHT
 ~Feels like every night I grow a pound or two. Good thing I'm traveling so much with you guys.~
-SAY SELECT_COMMON1 
+SAY SELECT_COMMON1
 ~Say Word and I will follow.~
-SAY SELECT_COMMON2 
+SAY SELECT_COMMON2
 ~Who needs to get squashed?~
-SAY SELECT_COMMON3 
+SAY SELECT_COMMON3
 ~Be quick, I need to be watered.~
-SAY SELECT_COMMON4 
+SAY SELECT_COMMON4
 ~You want my looks or my skills?~
-SAY SELECT_COMMON5 
+SAY SELECT_COMMON5
 ~Don't get me crushed brother.~
-SAY SELECT_COMMON6 
+SAY SELECT_COMMON6
 ~Tell me what you need.~
 SAY SELECT_ACTION1
 ~Faster than a easy tenday.~
-SAY SELECT_ACTION2 
+SAY SELECT_ACTION2
 ~Relax, I can do this unarmed...Maybe...~
-SAY SELECT_ACTION3 
+SAY SELECT_ACTION3
 ~Just like my stem, my moves are strong.~
-SAY SELECT_ACTION4 
+SAY SELECT_ACTION4
 ~They want food but I'm in a mood.~
-SAY SELECT_ACTION5 
+SAY SELECT_ACTION5
 ~Rolling over.~
 SAY SELECT_ACTION6
 ~I am more than just a potrait to be made.~
 SAY SELECT_ACTION7
 ~About to make this their last meal!~
-SAY SELECT_RARE1 
+SAY SELECT_RARE1
 ~Don't worry, I'm a pumpkin. Not a blumpkin.~
-SAY SELECT_RARE2 
+SAY SELECT_RARE2
 ~Don't make me upchuck seeds. It's not good for my body's complexion.~
-SAY CRITICAL_HIT 
+SAY CRITICAL_HIT
 ~Gonna carve YOU into pieces!~
 SAY CRITICAL_MISS
 ~Hold still! I just want to talk to you.~
-SAY TARGET_IMMUNE 
+SAY TARGET_IMMUNE
 ~Brother, this ain't working. I need something else.~
-SAY INVENTORY_FULL 
+SAY INVENTORY_FULL
 ~I don't have any more space and I'm not shoving anything in me either.~
-SAY SPELL_DISRUPTED 
+SAY SPELL_DISRUPTED
 ~My spell failed. This usually doesn't happen when i'm...performing...~
-SAY BIO 
+SAY BIO
 ~When asked about his past, WALLACE explains his many solo jaunts throughout the pumpkin farm where he grew up. Many of which start off with the common folk trying to test if him and his brethren can be goldenpanned for their stomachs or gnoll droppings to be tossed in a chamber's pot. He strongly states that all pumpkins should not be devoured and should be left to grow in peace. However, upon further listening you find out he was not always this size and that after a wizard had casted a spell onto him, his entire being had changed. Despite this noticeable change, he seems to be taking it quite well.~
 
-COMPILE EVALUATE_BUFFER ~wallace/Dialogue/BCFKYLE.d~ 
+COMPILE EVALUATE_BUFFER ~wallace/Dialogue/BCFKYLE.d~
+  ~wallace/Dialogue/CFINSUL.d~ // new d file to compile, needed for the rest
+  ~wallace/Dialogue/CFKYLE.d~ // new file needed for the rest
 	~wallace/Dialogue/CFFRED.d~  // Quest that involves getting Wallace through Fred.
 	~wallace/Dialogue/CFKYLEJ.d~ // The rest of Wallace's dialogue: his commentary, interjections, talks with the player, and all else.
 	~wallace/Dialogue/CFKYLEK.d~ // Wallace leaves the party
@@ -131,81 +133,81 @@ SAY MORALE
 ~I'm not getting cooked here!~
 SAY HAPPY
 ~Let's get smashed and find some wenches! We farruking earned it!~
-SAY UNHAPPY_ANNOYED 
+SAY UNHAPPY_ANNOYED
 ~Brother, what am I even doing here?~
-SAY UNHAPPY_SERIOUS 
+SAY UNHAPPY_SERIOUS
 ~You disappoint me and all pumpkins throughout the sword coast.~
-SAY UNHAPPY_BREAKING 
+SAY UNHAPPY_BREAKING
 ~I'm done. Next time I see you, I'll bury you in the earth.~
-SAY LEADER 
+SAY LEADER
 ~Me? Leading? Sure but let's find the nearest tavern first brother!~
-SAY TIRED 
+SAY TIRED
 ~I know I don't need to sleep but I can feel my pulp getting mushy. Can we rest?~
-SAY BORED 
+SAY BORED
 ~And I thought sitting in sunlight was boring...~
-SAY BATTLE_CRY1 
+SAY BATTLE_CRY1
 ~Don't mess with the stem!~
-SAY BATTLE_CRY2 
+SAY BATTLE_CRY2
 ~FOR THE BROTHER LENNY!~
 SAY BATTLE_CRY3
 ~Brother, are YOU good?~
-SAY DAMAGE 
+SAY DAMAGE
 ~Oof...~
-SAY HURT 
+SAY HURT
 ~Pumpkin pie? I don't wanna die.~
-SAY DYING 
+SAY DYING
 ~It was fun while it lasted brother...~
 SAY AREA_FOREST
 ~Being here reminds me of the farm back home. Once I get back, I plan on taking my fellow Brother-in-arms here.~
-SAY AREA_CITY 
+SAY AREA_CITY
 ~Alright, so...when are we courting the wenches around here?~
-SAY AREA_DUNGEON 
+SAY AREA_DUNGEON
 ~Not enough sunlight. And how do the mortals clean themselves here?~
-SAY AREA_DAY 
+SAY AREA_DAY
 ~Mind if we stay here for a while? My dew needs drying.~
-SAY AREA_NIGHT 
+SAY AREA_NIGHT
 ~Feels like every night I grow a pound or two. Good thing I'm traveling so much with you guys.~
-SAY SELECT_COMMON1 
+SAY SELECT_COMMON1
 ~Say Word and I will follow.~
-SAY SELECT_COMMON2 
+SAY SELECT_COMMON2
 ~Who needs to get squashed?~
-SAY SELECT_COMMON3 
+SAY SELECT_COMMON3
 ~Be quick, I need to be watered.~
-SAY SELECT_COMMON4 
+SAY SELECT_COMMON4
 ~You want my looks or my skills?~
-SAY SELECT_COMMON5 
+SAY SELECT_COMMON5
 ~Don't get me crushed brother.~
-SAY SELECT_COMMON6 
+SAY SELECT_COMMON6
 ~Tell me what you need.~
 SAY SELECT_ACTION1
 ~Faster than a easy tenday.~
-SAY SELECT_ACTION2 
+SAY SELECT_ACTION2
 ~Relax, I can do this unarmed...Maybe...~
-SAY SELECT_ACTION3 
+SAY SELECT_ACTION3
 ~Just like my stem, my moves are strong.~
-SAY SELECT_ACTION4 
+SAY SELECT_ACTION4
 ~They want food but I'm in a mood.~
-SAY SELECT_ACTION5 
+SAY SELECT_ACTION5
 ~Rolling over.~
 SAY SELECT_ACTION6
 ~I am more than just a potrait to be made.~
 SAY SELECT_ACTION7
 ~About to make this their last meal!~
-SAY SELECT_RARE1 
+SAY SELECT_RARE1
 ~Don't worry, I'm a pumpkin. Not a blumpkin.~
-SAY SELECT_RARE2 
+SAY SELECT_RARE2
 ~Don't make me upchuck seeds. It's not good for my body's complexion.~
-SAY CRITICAL_HIT 
+SAY CRITICAL_HIT
 ~Gonna carve YOU into pieces!~
 SAY CRITICAL_MISS
 ~Hold still! I just want to talk to you.~
-SAY TARGET_IMMUNE 
+SAY TARGET_IMMUNE
 ~Brother, this ain't working. I need something else.~
-SAY INVENTORY_FULL 
+SAY INVENTORY_FULL
 ~I don't have any more space and I'm not shoving anything in me either.~
-SAY SPELL_DISRUPTED 
+SAY SPELL_DISRUPTED
 ~My spell failed. This usually doesn't happen when i'm...performing...~
-SAY BIO 
+SAY BIO
 ~When asked about his past, WALLACE explains his many solo jaunts throughout the pumpkin farm where he grew up. Many of which start off with the common folk trying to test if him and his brethren can be goldenpanned for their stomachs or gnoll droppings to be tossed in a chamber's pot. He strongly states that all pumpkins should not be devoured and should be left to grow in peace. However, upon further listening you find out he was not always this size and that after a wizard had casted a spell onto him, his entire being had changed. Despite this noticeable change, he seems to be taking it quite well.~
 
 WRITE_ASCII 0x2cc ~CFKYL25S~ #8  // dialogue file where we'll put Wallace's greeting dialogue for ToB, if you summon her via Fate Spirit.
@@ -213,16 +215,15 @@ WRITE_ASCII 0x280 ~CFKYLE~   #32
 
 COMPILE EVALUATE_BUFFER ~wallace/Dialogue/CFKYL25.d~  // All Wallaces's ToB banters with other party members will go here.
 	~wallace/Dialogue/KYLEFTS.d~  // Wallace's ToB greeting dialogue will go here.
-	~wallace/Dialogue/CFKYL25.d~  // Wallace's ToB leaving party dialogue will go here.
-
+	~wallace/Dialogue/CFKYLEK.d~  // Wallace's ToB leaving party dialogue will go here. // wrong dialog file was here
 
 
 ACTION_IF GAME_IS ~BG2EE eet~ BEGIN
 COMPILE	~wallace/Dialogue/EEKYLE.d~
 END
 
-COPY ~sirwallace/Epilogue/CFKYLEZ.2da~ ~override/CFKYL01.2da~
-REPLACE ~99999~ @40
+COPY ~wallace/Epilogue/CFKYLEZ.2da~ ~override~
+REPLACE ~99999~ ~whatever replacement needed~//@40 // fix this with proper value
 
 COMPILE "wallace/Dialogue"
 
