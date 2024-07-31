@@ -102,7 +102,7 @@ DO ~SetGlobal("CFKYLEHaerDalisToB1","GLOBAL",1)~
 ~Brother bard, take notes. The next play you have shall tell of all the ways the PUMPKIN channels his rage.~
 == CFKYLE25 
 ~By the nine, I'm amazing.~
-== BHAERD25 @35 
+== BHAERD25 
 ~My elk, keep chanting her name and I will singing of your praise. LEAD ON!~
 EXIT
 
