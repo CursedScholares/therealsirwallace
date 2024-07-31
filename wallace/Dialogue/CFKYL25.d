@@ -102,7 +102,7 @@ DO ~SetGlobal("CFKYLEHaerDalisToB1","GLOBAL",1)~
 ~Brother bard, take notes. The next play you have shall tell of all the ways the PUMPKIN channels his rage.~
 == CFKYLE25 
 ~By the nine, I'm amazing.~
-== BHAERD25 @35 
+== BHAERD25
 ~My elk, keep chanting her name and I will singing of your praise. LEAD ON!~
 EXIT
 
@@ -167,13 +167,13 @@ See("CFKYLE")
 Global("CFKYLEJaheiraToB2","GLOBAL",0)~ THEN BJAHEI25 CFKYLEJaheiraToB2
 ~Though this had been for a long time coming, Sir Wallace I must apologize. While I cannot see you as the others do, you mean well albeit occassionally crude.~
 DO ~SetGlobal("CFKYLEJaheiraToB2","GLOBAL",1)~
-== CFKYLE25 
+== CFKYLE25
 ~Sister, you finally respect me. As a fellow druid. My sister.~
-== BJAHEI25 
+== BJAHEI25
 ~Do not let it get to your head or in this case you enlarged stomach.~
 EXIT
 
-CHAIN 
+CHAIN
 IF ~InParty("CFKYLE")
 See("CFKYLE")
 !StateCheck("Jan",CD_STATE_NOTVALID)
@@ -183,9 +183,9 @@ Global("CFKYLEJanToB1","GLOBAL",0)~ THEN CFKYLE25 CFKYLEJanToB1
 DO ~SetGlobal("CFKYLEJanToB1","GLOBAL",1)~
 == BJAN25
 ~I find that quite offensive. Golodon had said the exact same thing while I was doing his dirty washcloths under his coin.~
-== CFKYLE25 
-~~I actually meant no offense. Honestly, the fact that we two are still alive is miraculous.~
-== BJAN25 
+== CFKYLE25
+~I actually meant no offense. Honestly, the fact that we two are still alive is miraculous.~
+== BJAN25
 ~We are only alive simply because <CHARNAME> has recognized us for our vegetable prowess and knowledge. It reminds me when us Jansen's started selling in the slums back in Athkatla.~
 == CFKYLE25
 ~You know, it's funny that you mention that but we never did manage to cross paths. We were selling on opposite sides and yet I never heard of the Jansen name before I met <CHARNAME>.~
@@ -207,7 +207,7 @@ See("Keldorn")
 Global("CFKYLEKeldornToB1","GLOBAL",0)~ THEN CFKYLE25 CFKYLEKeldornToB1
 ~I don't agree with the choices you made, but you are strong. And devoted.~
 DO ~SetGlobal("CFKYLEKeldornToB1","GLOBAL",1)~
-== BKELDO25 
+== BKELDO25
 ~Likewise. I cannot agree with your hedonistic lifestyle but I can say you fight with fury that matches the flames of Elysium had I been given the chance to look upon them.~
 == BKELDO25
 ~And I must admit, the way you talk about your brother-in-arms, especially Lenny, I believe his name was. I am glad that I have earned your trust to discuss personal matters.~
@@ -215,12 +215,12 @@ DO ~SetGlobal("CFKYLEKeldornToB1","GLOBAL",1)~
 ~Well, you're a paladin. You probably can say that he died as a good brother to me.~
 == BKELDO25
 ~In my growing years, many a brother-in-arms had fallen in war and I could do nothing to prevent such a thing. All I could do was give a prayer and ensure that his words and actions were not forgotten. Especially to those they left behind in service to Torm.~
-== BKELDO25 
+== BKELDO25
 ~From what you have told me, know this Sir Wallace. Lenny was a pumpkin devoted to his family such as yourself. He spent his life, taking jaunts through the fields with the ones he loved, sharing his rich soil to those that were wilting, and rolling to the frontlines so that others could not be purchased. To let others of his kind spend what remaining days they had before taking their journey to beyond the Fugue Plane.~
 == BKELDO25
-~~He knew what his kind were subjected to and still protected them with a smile. He died devoting himself to the lands and people he loved. He was good brother Wallace.
-== CFKYLE25 
-~That...was beautiful Sir....~
+~He knew what his kind were subjected to and still protected them with a smile. He died devoting himself to the lands and people he loved. He was good brother Wallace.~
+== CFKYLE25
+~That was...beautiful sir~
 == BKELDO25
 ~Come, rest your head on my shoulder. It has been a long day and good men shouldn't be subjected to emotional torment.~
 == CFKYLE25
