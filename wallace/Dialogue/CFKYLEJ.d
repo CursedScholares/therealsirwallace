@@ -1,10 +1,12 @@
+BEGIN CFKYLEJ
+
 EXTEND_BOTTOM TRGYP02 2
 IF ~!InPartySlot(LastTalkedToBy,0) Name("CFKYLE",LastTalkedToBy)~ EXTERN TRGYP02 g1
 END
 
 CHAIN TRGYP02 g1
 ~Despite your simple nature, there grows a gnarled root in your heart. Grow close to your allies as they are willing to ease your burdens when needed.~
-== CFKYLEJ 
+== CFKYLEJ
 ~And nothing involving a lass in my arms. I say we get our coin back.~
 EXIT
 
@@ -30,7 +32,7 @@ CHAIN IF WEIGHT #-1
 Name("CFKYLE",LastTalkedToBy)
 !Global("MadamUpset","GLOBAL",1)~ THEN MADAM CFKYLEReactionMadam1
 ~Greetings sir. I am Madame Nin, and I am here to ensure you are pleasantly accompanied. Unfortunately, your kind is something we are not able to accomodate. My sincerest apologies.~
-== CFKYLEJ 
+== CFKYLEJ
 ~Is this a jest? I suppose it makes sense. No mortal can handle all this pumpkin.~
 EXIT
 
@@ -39,7 +41,7 @@ CHAIN IF WEIGHT #-1
 Name("CFKYLE",LastTalkedToBy)
 !Global("MadamUpset","GLOBAL",1)~ THEN MADAM CFKYLEReactionMadam2
 ~Again sir, we cannot accomodate for your allies kind.~
-== CFKYLEJ 
+== CFKYLEJ
 ~Let's find another inn. One that has curvy pumpkins that I can court.~
 EXIT
 
@@ -93,7 +95,7 @@ END
 CHAIN CFKYLEJ pl2.1
 ~<PRO_BROTHERSISTER> <CHARNAME>, we're it not for you my brothers would be stomped, squashed or eaten by now. You had me see sights and fight battles that none of my kind would have ever beheld. For all that you've done and more <PRO_BROTHERSISTER> <CHARNAME>, I stand with you with swords drawn and stem strengthened.~
 END
-COPY_TRANS PLAYER1 33 
+COPY_TRANS PLAYER1 33
 
 // COPY_TRANS  means coming back to the main dialogue, so other characters can say their piece.
 // INTERJECT 33 + COPY_TRANS 33 is okay, you can use it almost anywhere. Still, use I_C_T for one-liners - see examples below.
@@ -102,7 +104,7 @@ COPY_TRANS PLAYER1 33
 // Tree of Life, Irenicus is dead.
 
 I_C_T PLAYER1 16 CFKYLEIrenicusIsDead1
-== CFKYLEJ IF ~InParty("CFKYLE") Range("CFKYLE",15) !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN 
+== CFKYLEJ IF ~InParty("CFKYLE") Range("CFKYLE",15) !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN
 ~Finally. Now that you've got your soul back, let's head back to the Elf city and celebrate. I always did wonder what elvish ale tasted like. Hopefully it doesn't have any leaves in it.~
 END
 
@@ -121,17 +123,17 @@ I_C_T HELLJON 7 CFKYLEThirdBattleWithIrenicus1
 END
 
 I_C_T HELLJON 8 CFKYLEThirdBattleWithIrenicus1
-== CFKYLEJ IF ~InParty("CFKYLE") InMyArea("CFKYLE") !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN 
+== CFKYLEJ IF ~InParty("CFKYLE") InMyArea("CFKYLE") !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN
 ~Watch over me brothers! Today, I strike this mage down in hell in the name of all pumpkin kind and for the ones who fallen. In the name of Chauntea's sweet BOSOMMMMMMM!~
 END
 
 I_C_T HELLJON 9 CFKYLEThirdBattleWithIrenicus1
-== CFKYLEJ IF ~InParty("CFKYLE") InMyArea("CFKYLE") !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN 
+== CFKYLEJ IF ~InParty("CFKYLE") InMyArea("CFKYLE") !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN
 ~Watch over me brothers! Today, I strike this mage down in hell in the name of all pumpkin kind and for the ones who fallen. In the name of Chauntea's sweet BOSOMMMMMMM!~
 END
 
 I_C_T HELLJON 10 CFKYLEThirdBattleWithIrenicus1
-== CFKYLEJ IF ~InParty("CFKYLE") InMyArea("CFKYLE") !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN 
+== CFKYLEJ IF ~InParty("CFKYLE") InMyArea("CFKYLE") !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN
 ~Watch over me brothers! Today, I strike this mage down in hell in the name of all pumpkin kind and for the ones who fallen. In the name of Chauntea's sweet BOSOMMMMMMM!~
 END
 
@@ -144,14 +146,14 @@ END
 // Viconia, hello!
 
 I_C_T VICONI 13 CFKYLEVICONI13
-== CFKYLEJ IF ~InParty("CFKYLE") InMyArea("CFKYLE") !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN 
+== CFKYLEJ IF ~InParty("CFKYLE") InMyArea("CFKYLE") !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN
 ~IF she hasn't eaten a pumpkin yet then I don't mind if she goes free. But only if she hasn't. Besides, burning at the stake is too much even for me.~
 END
 
 // Xzar is back
 
 I_C_T LYROS 5 CFKYLELYROS5
-== CFKYLEJ IF ~InParty("CFKYLE") InMyArea("CFKYLE") !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN 
+== CFKYLEJ IF ~InParty("CFKYLE") InMyArea("CFKYLE") !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN
 ~<CHARNAME> I've seen men like this before once or twice back at the farm. Either they have no coin and they beg for it or they end up being bedding raccoon's. Don't ask how I know the last one. I still am trying to erase it from my mind.~
 END
 
@@ -163,7 +165,7 @@ I_C_T CEFALDOR 9 CFKYLECEFALDOR9
 END
 
 I_C_T CEFALDOR 10 CFKYLECEFALDOR10
-== CFKYLEJ IF ~InParty("CFKYLE") InMyArea("CFKYLE") !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN 
+== CFKYLEJ IF ~InParty("CFKYLE") InMyArea("CFKYLE") !StateCheck("CFKYLE",CD_STATE_NOTVALID)~ THEN
 ~I'm not saying she's completely evil. I'm just saying she's misunderstood. Can't we give her a pass?~
 END
 

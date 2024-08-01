@@ -3,9 +3,9 @@
 In the slums of Atlkatla, there is a man selling his pumpkins. Upon closer inspection, there appears to be pumpkin that moves. */
 
 BEGIN CFFRED
-BEGIN CFKYLE
-BEGIN CFKYLEJ
-BEGIN CFINSUL
+//BEGIN CFKYLE
+//BEGIN CFKYLEJ
+//BEGIN CFINSUL
 
 CHAIN
 IF ~NumTimesTalkedTo(0)
@@ -134,7 +134,7 @@ EXIT
 CHAIN CFFRED K
 IF ~Global("CFKYLEMet","GLOBAL",0)~ THEN CFKYLE b1
 
-== BJAHEIR IF ~InParty("Jaheira") See("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN 
+== BJAHEIR IF ~InParty("Jaheira") See("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN
 ~Have lost your mind?! Am I the only one who sees that this is a human dressed in black cloth and orange clay and not what he claims to be?~
 == BYOSHIM IF ~InParty("Yoshimo") InMyArea("Yoshimo") !StateCheck("Yoshimo",CD_STATE_NOTVALID)~
 ~So another joins our ranks? I suppose it could be worse. We could have tried to recruit the mephits back in Irenicus's dungeon instead.~
